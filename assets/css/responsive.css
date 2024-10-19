@@ -162,7 +162,7 @@
         text-align: left;
     }
     #home #plantNplot .product {
-        flex: 0 0 190px;
+        flex: 0 0 100%;
     }
     #home #houseplants .container {
         height: 60vh;
@@ -179,10 +179,5 @@
     }
     footer .container .column:nth-child(4) {
         width: 100%;
-    }
-}
-@media only screen and (max-width: 376px) {
-    #home #plantNplot .product {
-        flex: 0 0 100%;
     }
 }
