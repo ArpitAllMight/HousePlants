@@ -1,0 +1,188 @@
+@media only screen and (max-width: 1025px) {
+    header {
+        padding: 0px 25px;
+        position: relative;
+    }
+    header nav {
+        padding-top: 30px;
+        padding-left: 30px;
+        position: absolute;
+        z-index: 1;
+        top: 64px;
+        right: 100%;
+        width: 100%;
+        background: white;
+        height: 100vh;
+        transition: 0.3s all ease;
+    }
+    header nav.active {
+        right: 0;
+    }
+    header #hamBurger {
+        display: block;
+    }
+    header ul {
+        flex-direction: column;
+    }
+    header ul li {
+        border-bottom: 1px solid forestgreen;
+    }
+    header ul li a {
+        transform: none !important;
+    }
+    header #hamBurger.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    header #hamBurger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    header #hamBurger.active span:nth-child(2) {
+        transform: translateX(-40px);
+        opacity: 0;
+        pointer-events: none;
+    }
+    body.active {
+        overflow: hidden;
+    }
+    #home #plantNplot .product {
+        flex: 0 0 295px;
+    }
+    footer .container {
+        row-gap: 15px;
+        flex-wrap: wrap;
+    }
+    footer .social {
+        margin: 10px;
+    }
+}
+@media only screen and (max-width: 885px) {
+    header nav {
+        padding-left: 0;
+    }
+    #home #slickSlider .content {
+        justify-content: space-around;
+    }
+    #home #slickSlider .heading {
+        align-items: flex-start;
+    }
+    #home .slick-prev {
+        left: -21px;
+    }
+    #home .slick-next {
+        right: -21px;
+    }
+    #home #plantCare .container {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+    #home #plantCare .shrink {
+        width: 200px;
+    }
+    #home #plantNplot .product {
+        flex: 0 0 260px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    header {
+        padding: 0px 10px;
+    }
+    #home #slickSlider .content {
+        padding: 20px;
+    }
+    #home #slickSlider h1 {
+        font-size: 45px;
+    }    
+    #home #plantCare .title {
+        flex-grow: 1;
+    }
+    #home #plantCare .title h2 {
+        font-size: 40px;
+        padding: 20px 0;
+    }
+    #home #plantCare .shrink {
+        width: fit-content;
+    }
+    #home #newArrivals .container {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #home #newArrivals .column {
+        transform: translateX(0px) translateY(0px);
+        width: 270px;
+    }
+    #home #indoorPlants .row {
+        align-items: flex-start;
+        justify-content: space-between;
+        row-gap: 15px;
+        flex-direction: column;
+        display: flex;
+    }
+    #home #indoorPlants .row p {
+        line-height: 30px;
+    }
+    #home #nature .container {
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #home #nature .content {
+        transform: translate(0px, 0px);
+        padding: 20px;
+    }
+    #home #bedroom .container {
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #home #bedroom .content {
+        transform: translate(0px, 0px);
+        padding: 20px;
+    }
+    #home #healthyNhappy .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+    }
+    #home #healthyNhappy .content {
+        transform: translate(0px, 0px);
+        padding: 20px;
+    }
+    #home #healthyNhappy .content h4 {
+        font-size: 35px;
+    }
+    #home #plantNplot .shop {
+        justify-content: space-evenly;
+    }
+    #home #plantNplot .row {
+        text-align: left;
+    }
+    #home #plantNplot .product {
+        flex: 0 0 190px;
+    }
+    #home #houseplants .container {
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #home #houseplants .content {
+        transform: translateX(0px);
+        padding: 20px;
+    }
+    footer .container {
+        flex-direction: column;
+    }
+    footer .container .column:nth-child(4) {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 376px) {
+    #home #plantNplot .product {
+        flex: 0 0 100%;
+    }
+}

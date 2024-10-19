@@ -1,0 +1,589 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+img {
+    display: block;
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+p,a {
+    font-size: 18px;
+}
+li {
+    list-style: none;
+}
+a {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: forestgreen;
+    transition: 0.3s all ease;
+}
+a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+.container {
+    max-width: 95%;
+    margin: auto;
+}
+header {
+    padding: 0px 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid green;
+}
+header .logo img {
+    width: 300px;
+    padding: 10px;
+}
+header ul {
+    display: flex;
+}
+header ul li a {
+    display: flex;
+    align-items: baseline;
+    column-gap: 8px;
+    font-size: 20px;
+    padding: 18px 15px;
+}
+header ul li a:hover {
+    text-decoration: none;
+}
+header #hamBurger {
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+header #hamBurger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background: green;
+    transition: 0.3s all ease;
+}
+header #hamBurger span:nth-child(2) {
+    margin: 5px 0;
+}
+#home #slickSlider h1,
+#home #slickSlider span,
+#home #slickSlider p,
+#home #slickSlider a,
+#home #slickSlider i {
+    color: white;
+}
+#home #slickSlider .slick-prev:before,
+#home #slickSlider .slick-next:before {
+    color: forestgreen;
+}
+#home #slickSlider .slick-dots {
+    bottom: 15px;
+}
+#home #slickSlider .slick-dots li button:before {
+    font-size: 10px;
+}
+#home #slickSlider .slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+#home #slickSlider .slick-slider .slider {
+    background-position: top !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+#home #slickSlider .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px;
+    row-gap: 25px;
+    height: 91vh;
+}
+#home #slickSlider h1 {
+    font-size: 60px;
+}
+#home #slickSlider .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#home #slickSlider .heading span {
+    font-size: 25px;
+}
+#home #slickSlider .heading p {
+    font-size: 25px;
+}
+#home #slickSlider .heading a.btn {
+    background: forestgreen;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 20px;
+}
+#home #slickSlider .para > p::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    border-radius: 2px;
+    background: white;
+    margin-bottom: 10px;
+}
+#home #slickSlider .icon {
+    display: flex;
+    column-gap: 15px;
+    margin-top: 12px;
+}
+#home #plantCare {
+    padding: 50px 0;
+}
+#home #plantCare .container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+#home #plantCare .title {
+    align-content: center;
+    flex-grow: 2;
+    border: 1px solid forestgreen;
+}
+#home #plantCare .title h2 {
+    font-size: 45px;
+    text-align: center;
+    transition: 0.3s all ease;
+}
+#home #plantCare .title h2:hover {
+    transform: scale(1.1);
+}
+#home #plantCare .shrink {
+    width: 170px;
+    flex-grow: 1;
+    padding: 20px;
+    border: 1px solid forestgreen;
+}
+#home #plantCare .para i {
+    font-size: 25px;
+}
+#home #plantCare .para {
+    text-align: center;
+    transition: 0.3s all ease;
+}
+#home #plantCare .para:hover {
+    transform: scale(1.1);
+}
+#home #plantCare .para h3 {
+    margin: 8px 0;
+}
+#home #newArrivals .container {
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#home #newArrivals .column {
+    background: white;
+    width: 255px;
+    padding: 30px;
+    transform: translateX(75px);
+}
+#home #newArrivals .column h2 {
+    font-size: 30px;
+}
+#home #newArrivals .column h2::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    border-radius: 2px;
+    background: forestgreen;
+    margin: 12px 0;
+}
+#home #newArrivals p.subtitle {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#home #newArrivals li {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    column-gap: 8px;
+    margin: 5px 0;
+}
+#home #newArrivals .boldTag::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    border-radius: 2px;
+    background: forestgreen;
+    margin: 12px 0;
+}
+#home #newArrivals .boldTag,
+#home #newArrivals span {
+    text-transform: capitalize;
+}
+#home #newArrivals .link {
+    display: inline-block;
+    transform: scale(1.0);
+    color: black;
+    text-decoration: none;
+}
+#home #newArrivals .insta {
+    display: flex;
+    justify-content: end;
+    max-width: 95%;
+    margin: auto;
+}
+#home #newArrivals .insta a {
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+#home #newArrivals .insta a:hover {
+    text-decoration: none;
+}
+#home #indoorPlants p.subtitle {
+    text-transform: capitalize;
+}
+#home #indoorPlants .title h3 {
+    font-size: 40px;
+    color: forestgreen;
+}
+#home #indoorPlants .row {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+#home #indoorPlants .row span {
+    background: forestgreen;
+    color: white;
+    padding: 5px 15px;
+}
+#home #indoorPlantSlider .slick-slider a:hover {
+    transform: none;
+}
+#home #indoorPlantSlider .slick-slider .link {
+    overflow: hidden;
+}
+#home #indoorPlantSlider .slick-slider .link img {
+    transition: 0.3s all ease;
+}
+#home #indoorPlantSlider .slick-slider .link:hover > img {
+    transform: scale(1.1);
+}
+#home #indoorPlantSlider .slick-slider .slide {
+    position: relative;
+    margin: 0 5px;
+}
+#home #indoorPlantSlider .slick-slider .over {
+    text-align: center;
+    align-content: center;
+    text-transform: capitalize;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    backdrop-filter: brightness(0.8);
+    transition: 0.3s all ease;
+    opacity: 0;
+    pointer-events: none;
+}
+#home #indoorPlantSlider .slick-slider .slide:hover .over {
+    top: 0;
+    opacity: 1;
+    pointer-events: all;
+}
+#home #indoorPlantSlider .slick-slider .slick-prev:before,
+#home #indoorPlantSlider .slick-slider .slick-next:before {
+    color: forestgreen;
+}
+#home #indoorPlantSlider .slick-dots li button:before {
+    font-size: 10px;
+}
+#home #indoorPlantSlider .slick-dots {
+    bottom: -40px;
+}
+#home #nature {
+    margin-top: 60px;
+}
+#home #nature .container {
+    height: 95vh;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+#home #nature .content {
+    transform: translate(65px, 65px);
+    display: inline-block;
+    backdrop-filter: brightness(0.8);
+    padding: 35px;
+}
+#home #nature .content h4 {
+    font-size: 45px;
+    color: white;
+}
+#home #nature .content p {
+    margin: 15px 0;
+    color: white;
+}
+#home #nature a.btn {
+    background: forestgreen;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+}
+#home #bedroom {
+    margin-top: 40px;
+}
+#home #bedroom .container {
+    height: 95vh;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+#home #bedroom .content {
+    transform: translate(65px, 65px);
+    display: inline-block;
+    backdrop-filter: brightness(0.8);
+    padding: 35px;
+}
+#home #bedroom .content h4 {
+    font-size: 45px;
+    color: white;
+}
+#home #bedroom .content p {
+    margin: 15px 0;
+    color: white;
+}
+#home #bedroom a.btn {
+    background: forestgreen;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+}
+#home #healthyNhappy {
+    margin-top: 40px;
+}
+#home #healthyNhappy .container {
+    height: 95vh;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#home #healthyNhappy .content {
+    text-align: end;
+    transform: translate(-65px, 0);
+    display: inline-block;
+    backdrop-filter: brightness(0.7);
+    padding: 35px;
+}
+#home #healthyNhappy .content h4 {
+    font-size: 45px;
+    color: white;
+}
+#home #healthyNhappy p.subtitle {
+    font-size: 25px;
+    text-transform: capitalize;
+}
+#home #healthyNhappy .content p {
+    margin: 15px 0;
+    color: white;
+}
+#home #healthyNhappy a.btn {
+    background: forestgreen;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+}
+#home #plantNplot .container {
+    position: relative;
+}
+#home #plantNplot .badge {
+    background: forestgreen;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+#home #plantNplot .badge p {
+    padding: 10px;
+    margin-top: 15px;
+}
+#home #plantNplot .badge p::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    border-radius: 2px;
+    background: white;
+    margin: 5px 0;
+}
+#home #plantNplot .row {
+    text-align: center;
+    margin: 30px 0;
+}
+#home #plantNplot .row h4 {
+    font-size: 35px;
+}
+#home #plantNplot p {
+    text-transform: capitalize;
+}
+#home #plantNplot .shop {
+    display: flex;
+    column-gap: 15px;
+    row-gap: 5px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#home #plantNplot .product {
+    flex: 0 0 345px;
+    transform: none;
+}
+#home #plantNplot .image {
+    transition: 0.3s all ease;
+    overflow: hidden;
+}
+#home #plantNplot .image img {
+    transition: 0.3s all ease;
+}
+#home #plantNplot .product:hover > .image {
+    filter: brightness(0.9);
+}
+#home #plantNplot .product:hover > .image img {
+    transform: scale(1.1);
+}
+#home #plantNplot .detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+#home #houseplants {
+    margin: 40px 0;
+}
+#home #houseplants .container {
+    height: 90vh;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+}
+#home #houseplants .content {
+    backdrop-filter: brightness(0.6);
+    display: inline-block;
+    padding: 40px;
+    color: white;
+    text-align: right;
+    transform: translateX(50px);
+}
+#home #houseplants .content h5 {
+    font-size: 35px;
+}
+#home #houseplants .content .btn {
+    background: forestgreen;
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 15px;
+}
+footer h6::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: -webkit-fill-available;
+    border-radius: 2px;
+    background: forestgreen;
+    margin: 10px 0;
+}
+footer a {
+    display: inline-block;
+}
+footer a:hover {
+    transform: none;
+    text-decoration: none;
+}
+footer {
+    margin-bottom: 25px;
+    position: relative;
+}
+footer .container {
+    display: flex;
+    column-gap: 15px;
+    justify-content: space-between;
+}
+footer .container .column:nth-child(4) {
+    width: 400px;
+}
+footer ul li {
+    margin: 6px 0;
+}
+footer ul li::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: -webkit-fill-available;
+    border-radius: 2px;
+    background: forestgreen;
+}
+footer ul li a {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding: 5px 0;
+}
+footer .social {
+    display: flex;
+    column-gap: 10px;
+    justify-content: end;
+}
+footer .social li a {
+    font-size: 30px;
+    transition: 0.2s all ease;
+}
+footer .social li a:hover {
+    transform: scale(1.1);
+}
+footer .social li:after {
+    display: none;
+}
+footer .container:nth-child(2) {
+    background: forestgreen;
+    padding: 10px;
+    justify-content: center;
+}
+footer .container:nth-child(2) a {
+    color: white;
+}
+footer .container:nth-child(2) a:hover {
+    text-decoration: underline;
+}
+footer #scrollToTop {
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    cursor: pointer;
+}
+footer #scrollToTop i {
+    font-size: 22px;
+    color: firebrick;
+    transition: 0.3s all ease;
+}
+footer #scrollToTop i:hover {
+    transform: scale(1.2);
+}
