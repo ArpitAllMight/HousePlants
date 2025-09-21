@@ -506,7 +506,7 @@ footer h6::after {
     content: "";
     display: block;
     height: 2px;
-    width: -webkit-fill-available;
+    width: auto;
     border-radius: 2px;
     background: forestgreen;
     margin: 10px 0;
@@ -537,7 +537,7 @@ footer ul li::after {
     content: "";
     display: block;
     height: 2px;
-    width: -webkit-fill-available;
+    width: auto;
     border-radius: 2px;
     background: forestgreen;
 }
@@ -586,4 +586,5 @@ footer #scrollToTop i {
 }
 footer #scrollToTop i:hover {
     transform: scale(1.2);
+
 }
